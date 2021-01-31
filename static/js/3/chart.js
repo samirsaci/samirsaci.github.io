@@ -133,8 +133,8 @@ function Diagram(params) {
       selector: 'node',
       data: nodes
     }) 
-      .attr('rx', 2)
-      .attr('ry', 2)
+      .attr('rx', 0)
+      .attr('ry', 0)
       .attr("x", d => d.x0)
       .attr("y", d => d.y0)
       .attr("height", d => Math.max(1, d.y1 - d.y0))

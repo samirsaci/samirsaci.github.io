@@ -22,16 +22,14 @@
                 <div class="dropdown-container">
                     <label for="aggr_type"></label>
                     <select id="aggr_type" class="form-control form-control-sm-custom" onchange="updateAggregation()">
-                        <option value="product_num">Product Count</option>
-                        <option value="product_sold">Product Sold</option>
-                        <option value="units_returned">Sum of Units returned</option>
-                        <option value="avg_total_income">Total income (qty * avg price)</option>
+                        <option value="product_num">Number of References (SKU)</option>
+                        <option value="product_sold">Units Sold (Pieces)</option>
+                        <option value="units_returned">Units Returned from Customers (Units)</option>
+                        <option value="avg_total_income">Total Goods Value (Euros)</option>
                     </select>
                 </div>
             </div>
-            <div class="cta-2">
-                Click on boxes highlights connected links, hover to see more info. Click on blank area or same box, clears selection.
-            </div>
+            <div class="cta-2"> Retail Store Cosmetics Sales Analysis: you can choose a filter above</div>
             <div id="sankey_diagram" class="chart-container"></div>
             <div class="cta">
                 Instructions: click on one box to select a flow and highlight it. (click again to clear selection).
@@ -39,11 +37,11 @@
         </div>
     </div>
 
-<!-- Scripts-->
-    <script src="/static/js/Libs/d3.v5.min.js"></script>
-    <script src="/static/js/Libs/d3-sankey.min.js"></script>
-    <script src="/static/js/Libs/popper.min.js"></script>
-    <script src="/static/js/Libs/tippy-bundle.umd.min.js"></script>
+<!-- Scripts -->
+    <script src="/static/js/libs/d3.v5.min.js"></script>
+    <script src="/static/js/libs/d3-sankey.min.js"></script>
+    <script src="/static/js/libs/popper.min.js"></script>
+    <script src="/static/js/libs/tippy-bundle.umd.min.js"></script>
 
 <!-- Scripts -->
     <script src="/static/js/3/utils.js"></script>

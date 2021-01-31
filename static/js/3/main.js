@@ -24,7 +24,7 @@ function main() {
 }
 
 function loadData() {
-  return d3.csv('/static/data/3/data.csv', d3.autoType);
+  return d3.csv('/static/data/3/market.csv', d3.autoType);
 }
 
 function calcAggr(values) {
