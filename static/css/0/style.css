@@ -1,4 +1,3 @@
-/*--------Typography--------*/
 body {
 	font-family: "Open Sans", sans-serif, Arial, Helvetica;
 	font-size: 15px;
@@ -42,7 +41,6 @@ body {
 }
 
 div .links a {
-	/* display: block; */
 	font-family: "Open Sans", sans-serif, Arial, Helvetica;
 	font-size: .875rem;
 	color: #111;
@@ -64,7 +62,6 @@ div .links a {
 	color: #111;
 }
 
-/*--------Banner Section--------*/
 #banner {
 	padding: 12px;
 }
@@ -75,7 +72,6 @@ div .links a {
 	display: block;
 	width: 30px;
 	height: 5px;
-	/* margin-top: 30px; */
 }
 
 #banner h1 {
@@ -92,7 +88,6 @@ div .links a {
 	text-decoration: none;
 }
 
-/*Button*/
 .button {
 	font-size: 16px;
 	margin: 20px 0;
@@ -114,7 +109,6 @@ div .links a {
 	vertical-align: middle;
 }
 
-/*--------Portfolio Section--------*/
 #portfolio .portfolio-container {
 	padding: 20px;
 }
@@ -123,7 +117,6 @@ div .links a {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	/* box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2); */
 	padding-bottom: 62.5%;
 	height: 0;
 	border-radius: 10px;
@@ -178,18 +171,6 @@ div .links a {
 	white-space: wrap;
 }
 
-/* #portfolio .portfolio-box-description {
-    display: block;
-    text-align: left;
-	font-size: 15px;
-	font-family: sofia-pro;
-    margin-top: .8em;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-} */
-
 #portfolio
 	.portfolio-box
 	.portfolio-box-caption
@@ -206,10 +187,6 @@ div .links a {
 	pointer-events: none;
 }
 
-/* #portfolio .portfolio-box:hover .portfolio-box-caption {
-	opacity: 1;
-} */
-
 #portfolio .portfolio-box:hover {
 	border: 1px inset red;
 }
@@ -218,7 +195,6 @@ div .links a {
 	outline: 0;
 }
 
-/*--------Footer--------*/
 footer:before {
 	content: "";
 	display: block;
@@ -227,7 +203,6 @@ footer:before {
 	margin: 30px auto 25px auto;
 }
 
-/*--------Color--------*/
 #banner .button {
 	border-color: #111;
 }
@@ -256,7 +231,6 @@ footer:before {
 	background: rgba(255, 255, 255, 0.1);
 }
 
-/* Type Writer Effect */
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
 h2 {
   border-right: solid 3px #1b0180;

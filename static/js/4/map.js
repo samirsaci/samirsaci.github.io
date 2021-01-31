@@ -15,8 +15,8 @@ svg = d3.select('#map').append("svg")
     .attr("height", height + hexRadius * 2);
 
 var promises = [];
-promises.push(d3.json('/static/data/6/departments.json'));
-promises.push(d3.csv('/static/data/6/communes.csv'));
+promises.push(d3.json('/static/data/4/departments.json'));
+promises.push(d3.csv('/static/data/4/communes.csv'));
 Promise.all(promises).then(function(values) {
     const geojson = values[0];
     const csv = values[1];

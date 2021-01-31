@@ -1,4 +1,11 @@
+// http://samirsaci.github.io/index
+// Index Page Javascript //
+//////////////////////////
+
+
+// Animate Name and Position Name
 document.addEventListener("DOMContentLoaded", function() {
+
 	// Animate title
 	var titleWrapper = document.querySelector("#banner-content h1");
 	titleWrapper.innerHTML = titleWrapper.textContent.replace(
