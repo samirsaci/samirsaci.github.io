@@ -1,0 +1,144 @@
+{
+    
+    "name": "CARES Act",
+    "children": [
+      {
+        "name": "Individuals¹",
+        "children": [
+          {
+            "name": "Cash Payments¹",
+            "value": 300
+          },
+          {
+            "name": "Extra Unemployment Payments¹",
+            "value": 260
+          }
+        ]
+      },
+      {
+        "name": "Large Corporations²",
+        "children": [
+          {
+            "name": "National Security",
+            "value": 17
+          },
+          {
+            "name": "Unspecified²",
+            "value": 425
+          },
+          {
+            "name": "Airlines",
+            "value": 58
+          }
+        ]
+      },
+      {
+        "name": "Small Business",
+        "children": [
+          {
+            "name": "New Loans",
+            "value": 350
+          },
+          {
+            "name": "Loan Relief",
+            "value": 17
+          },
+          {
+            "name": "Grants",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "name": "State & Local Gov’t",
+        "children": [
+          {
+            "name": "COVID-19",
+            "value": 274
+          },
+          {
+            "name": "Higher Education",
+            "value": 14
+          },
+          {
+            "name": "K-12 Schools",
+            "value": 13
+          },
+          {
+            "name": "Family Programs",
+            "value": 5.3
+          },
+          {
+            "name": "Block Grants",
+            "value": 5
+          },
+          {
+            "name": "Other",
+            "value": 28.5
+          }
+        ]
+      },
+      {
+        "name": "Public Health",
+        "children": [
+          {
+            "name": "Hospitals",
+            "value": 100
+          },
+          {
+            "name": "Veterans’ Health",
+            "value": 20
+          },
+          {
+            "name": "Equipment Stockpile",
+            "value": 16
+          },
+          {
+            "name": "Drug Access",
+            "value": 11
+          },
+          {
+            "name": "CDC",
+            "value": 4.3
+          },
+          {
+            "name": "Community Health Centers",
+            "value": 1.32
+          },
+          {
+            "name": "FDA Drug Prioritization",
+            "value": 0.08
+          },
+          {
+            "name": "Other",
+            "value": 0.8
+          }
+        ]
+      },
+      {
+        "name": "Student Loans, Other¹",
+        "value": 43.7
+      },
+      {
+        "name": "Safety Net",
+        "children": [
+          {
+            "name": "SNAP",
+            "value": 15.5
+          },
+          {
+            "name": "Child Nutrition",
+            "value": 8.8
+          },
+          {
+            "name": "Food Banks",
+            "value": 0.45
+          },
+          {
+            "name": "Other",
+            "value": 1.25
+          }
+        ]
+      }
+    ]
+  }

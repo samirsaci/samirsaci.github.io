@@ -1,0 +1,56 @@
+body {
+    font-family: "Poppins", sans-serif; /* "Oswald", sans-serif;  */
+    font-weight: 300;
+    background-color: #fdf6ee;
+    color: #212121;
+    line-height: 1.5;
+    font-size: 14px;
+  }
+  
+  h1 {
+    font-weight: 500;
+  }
+  
+  ol {
+    padding-left: 20px;
+  }
+  
+  .wrapper {
+    margin: 0 16px;
+    position: relative;
+    min-width: 600px;
+  }
+  
+  .text-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* Chart */
+  .chart-wrapper {
+    position: relative;
+    width: 100%;
+  }
+  
+  .chart-wrapper > * {
+    display: block;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  
+  .link {
+    fill: none;
+    stroke: #eee;
+  }
+  
+  .node-label {
+    stroke: #fff;
+    stroke-width: 3px;
+    paint-order: stroke;
+  }
+  
+  .bar-label {
+    font-variant-numeric: tabular-nums;
+  }

@@ -1,0 +1,280 @@
+/*--------Typography--------*/
+body {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 15px;
+	font-weight: normal;
+	color: #111;
+	background-color: #fdf6ee;
+}
+
+#banner h1 {
+	font-family: "Poppins", sans-serif;
+	font-size: 62px;
+	line-height: 10px;
+	font-weight: bold;
+}
+
+#banner h2 {
+	font-family: "Poppins", sans-serif;
+	margin-bottom: 20px;
+	font-weight: 300;
+	color: #1b0180;
+}
+
+#banner ul {
+	color: #111;
+	padding-left: 0;
+	/* font-weight: 200; */
+}
+
+#banner ul li::before {
+	font-family: "Poppins", sans-serif;
+	font-size: 18px;
+	font-weight: normal;
+	color: #111;
+}
+
+#banner .button {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 12px;
+	color: white;
+	background-color: #111;
+}
+
+div .links a {
+	/* display: block; */
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: .875rem;
+	color: #111;
+	padding:5px 20px 2px 0px;
+}
+
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+}
+
+#portfolio .portfolio-box:hover .portfolio-box-caption {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 18px;
+	color: #111;
+}
+
+/*--------Banner Section--------*/
+#banner {
+	padding: 12px;
+}
+
+#banner .section-heading:before,
+#banner .section-heading:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	/* margin-top: 30px; */
+}
+
+#banner h1 {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#banner-content.row {
+	padding-top: 30px; /* 100 px */
+	padding-bottom: 30px;
+}
+
+#banner a:hover {
+	text-decoration: none;
+}
+
+/*Button*/
+.button {
+	font-size: 16px;
+	margin: 20px 0;
+	padding: 11px 16px;
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	display: inline-block;
+	border-width: 1px;
+	border-style: solid;
+	border-radius: 20px;
+}
+
+.links {
+	padding:5px 5px 2px 0px;
+}
+
+.contact{
+	vertical-align: middle;
+}
+
+/*--------Portfolio Section--------*/
+#portfolio .portfolio-container {
+	padding: 20px;
+}
+
+#portfolio .portfolio-box {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	/* box-shadow: 2px 2px 25px rgba(0, 0, 0, 0.2); */
+	padding-bottom: 62.5%;
+	height: 0;
+	border-radius: 10px;
+	border: 1px inset #1b0180;
+	background-color: white;
+}
+
+#portfolio .portfolio-box img {
+	-webkit-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+	transform: scale(1.0);
+	-webkit-transition: 0.25s ease;
+	-moz-transition: 0.25s ease;
+	transition: 0.25s ease;
+	object-fit: cover;
+}
+
+#portfolio .portfolio-box .portfolio-box-caption {
+	position: absolute;
+	bottom: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: 0.2s ease;
+	-moz-transition: 0.2s ease;
+	transition: 0.2s ease;
+}
+
+#portfolio .portfolio-box-title {
+    display: block;
+    text-align: center;
+	font-size: 14px;
+	color:#1b0180;
+    margin-top: .5em;
+    width: 100%;
+	white-space: nowrap;
+	font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#portfolio .portfolio-box-description {
+    display: block;
+    text-align: left;
+	font-size: 12px;
+	color:#1b0180;
+	width: 100%;
+	margin-top: .7em;
+	font-weight: 300;
+	white-space: wrap;
+}
+
+/* #portfolio .portfolio-box-description {
+    display: block;
+    text-align: left;
+	font-size: 15px;
+	font-family: sofia-pro;
+    margin-top: .8em;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+#portfolio
+	.portfolio-box
+	.portfolio-box-caption
+	.portfolio-box-caption-content {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	text-align: center;
+	font-weight: bold;
+	color: #111;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+		1px 1px 0 #fff;
+	pointer-events: none;
+}
+
+/* #portfolio .portfolio-box:hover .portfolio-box-caption {
+	opacity: 1;
+} */
+
+#portfolio .portfolio-box:hover {
+	border: 1px inset red;
+}
+
+#portfolio .portfolio-box:focus {
+	outline: 0;
+}
+
+/*--------Footer--------*/
+footer:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	margin: 30px auto 25px auto;
+}
+
+/*--------Color--------*/
+#banner .button {
+	border-color: #111;
+}
+
+#banner .button:hover {
+	color: #1b0180;
+	border-color: #1b0180;
+	background-color: #fdf6ee;
+}
+
+a {
+	color: #d2b356;
+}
+
+a:hover {
+	color: #d2b356;
+}
+
+#banner .section-heading:before,
+#banner .section-heading:after,
+footer:before {
+	background: #0d0344;
+}
+
+#portfolio .portfolio-box .portfolio-box-caption {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+/* Type Writer Effect */
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+h2 {
+  border-right: solid 3px #1b0180;
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* Animation */
+h2 {
+  animation: animated-text 3s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+/* text animation */
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 450px;}
+}
+/* cursor animations */
+@keyframes animated-cursor{
+	from{border-right-color:  #1b0180;}
+	to{border-right-color: transparent;}
+  }

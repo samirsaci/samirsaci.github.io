@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Market Research Visualization</title>
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/3/tooltip.css">
+    <link rel="stylesheet" href="/static/css/3/main.css">
+    <link rel="stylesheet" href="/static/css/3/mobile.css">
+    <!-- Font Awesome-->
+    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Stylesheet -->
+	<link href="/static/css/3/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid main-container">
+        <div class="tile">
+            <div class="controls">
+                <div class="dropdown-container">
+                    <label for="aggr_type"></label>
+                    <select id="aggr_type" class="form-control form-control-sm-custom" onchange="updateAggregation()">
+                        <option value="product_num">Product Count</option>
+                        <option value="product_sold">Product Sold</option>
+                        <option value="units_returned">Sum of Units returned</option>
+                        <option value="avg_total_income">Total income (qty * avg price)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="cta-2">
+                Click on boxes highlights connected links, hover to see more info. Click on blank area or same box, clears selection.
+            </div>
+            <div id="sankey_diagram" class="chart-container"></div>
+            <div class="cta">
+                Instructions: click on one box to select a flow and highlight it. (click again to clear selection).
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/libs/d3.v5.min.js"></script>
+    <script src="/static/js/libs/d3-sankey.min.js"></script>
+    <script src="/static/js/libs/popper.min.js"></script>
+    <script src="/static/js/libs/tippy-bundle.umd.min.js"></script>
+
+<!-- Scripts -->
+    <script src="/static/js/3/utils.js"></script>
+    <script src="/static/js/3/chart.js"></script>
+    <script src="/static/js/3/main.js"></script>
+</body>
+</html>

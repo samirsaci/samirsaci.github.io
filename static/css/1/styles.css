@@ -1,0 +1,93 @@
+body {
+	font-family: "Oswald", sans-serif;
+	font-size: 14px;
+	background-color: #fdf6ee;
+	cursor: default;
+}
+
+#legend {
+	/* background-color: #ffffff; */
+	font-size: 14px;
+	border: 1.5px solid  #1b0180;
+	border-radius: 8px;
+}
+
+.hover-instruction {
+	color: #2a2a2a;
+	font-size: 12px;
+	padding-bottom: 15px;
+    border-bottom: 1px solid #dddddd;
+  }
+
+.dropdown-container {
+	color: #2a2a2a;
+	font-size: 12px;
+}
+
+#aggr_type {
+	color: #2a2a2a;
+	font-size: 12px;
+}
+  
+.hover-instruction:before {
+	margin-right: 10px;
+	content: "\f0a6";
+	font-family: FontAwesome;
+	font-size: 12px;
+}
+
+.radar-chart {
+	font-size: 12px;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.level-line {
+	stroke: #c0bebe;
+}
+
+.level-value {
+	fill: #000;
+}
+
+.axis-line {
+	stroke: #000;
+}
+
+.axis-name {
+	fill: #000;
+}
+
+.value {
+	fill: #000;
+}
+
+.legend-item-text {
+	fill: #000;
+}
+
+/*--------Footer--------*/
+footer:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	margin: 30px auto 25px auto;
+}
+
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+}
+
+footer:before {
+	background: #0d0344;
+}

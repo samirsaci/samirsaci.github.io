@@ -1,0 +1,125 @@
+[
+    {
+        "className": "Apple",
+        "axes": [
+            {
+                "axis": "Battery Life",
+                "value": 0.22
+            },
+            {
+                "axis": "Brand",
+                "value": 0.28
+            },
+            {
+                "axis": "Contract Cost",
+                "value": 0.29
+            },
+            {
+                "axis": "Design And Quality",
+                "value": 0.17
+            },
+            {
+                "axis": "Have Internet Connectivity",
+                "value": 0.22
+            },
+            {
+                "axis": "Large Screen",
+                "value": 0.02
+            },
+            {
+                "axis": "Price Of Device",
+                "value": 0.21
+            },
+            {
+                "axis": "To Be A Smartphone",
+                "value": 0.5
+            },
+            {
+                "axis": "Additional Parameter",
+                "value": 0.30000000000000004
+            }
+        ]
+    },
+    {
+        "className": "Samsung",
+        "axes": [
+            {
+                "axis": "Battery Life",
+                "value": 0.27
+            },
+            {
+                "axis": "Brand",
+                "value": 0.16
+            },
+            {
+                "axis": "Contract Cost",
+                "value": 0.35000000000000003
+            },
+            {
+                "axis": "Design And Quality",
+                "value": 0.13
+            },
+            {
+                "axis": "Have Internet Connectivity",
+                "value": 0.2
+            },
+            {
+                "axis": "Large Screen",
+                "value": 0.13
+            },
+            {
+                "axis": "Price Of Device",
+                "value": 0.35000000000000003
+            },
+            {
+                "axis": "To Be A Smartphone",
+                "value": 0.38
+            },
+            {
+                "axis": "Additional Parameter",
+                "value": 0.30000000000000004
+            }
+        ]
+    },
+    {
+        "className": "Nokia",
+        "axes": [
+            {
+                "axis": "Battery Life",
+                "value": 0.26
+            },
+            {
+                "axis": "Brand",
+                "value": 0.1
+            },
+            {
+                "axis": "Contract Cost",
+                "value": 0.30000000000000004
+            },
+            {
+                "axis": "Design And Quality",
+                "value": 0.14
+            },
+            {
+                "axis": "Have Internet Connectivity",
+                "value": 0.22
+            },
+            {
+                "axis": "Large Screen",
+                "value": 0.04
+            },
+            {
+                "axis": "Price Of Device",
+                "value": 0.41000000000000003
+            },
+            {
+                "axis": "To Be A Smartphone",
+                "value": 0.30000000000000004
+            },
+            {
+                "axis": "Additional Parameter",
+                "value": 0.30000000000000004
+            }
+        ]
+    }
+]

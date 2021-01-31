@@ -1,0 +1,59 @@
+#svg {
+    display: block;
+    margin: auto;
+}
+
+#tooltip {
+    position: absolute;
+	display: inline-block;
+	font-family: "Poppins", sans-serif;
+    color: #111;
+    font-size: 10px;
+    text-align: left;
+    background: #eaeaf5;
+    /* box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.25); */
+    pointer-events: cursor;
+    line-height: 200%;
+    max-width: 250px;
+    opacity: 0;
+	z-index: 999;
+	border-radius: 10px;
+	border: 1px inset #1b0180;
+}
+
+#tip-header {
+	text-align: center;
+	padding: 5px 10px;
+	border-bottom: 1px solid #ccc;
+	color: #1b0180;
+	font-weight: 20;
+	margin: 0;
+}
+
+#tip-header h1 {
+    font-size: 12px;
+      padding: 0;
+      margin: 0;
+}
+
+#tip-header p {
+    margin: 0;
+    color: #000000;
+    text-align: right;
+}
+
+/* .tile {
+	border: 1.5px solid#1b0180;
+  } */
+
+.cta{
+	text-align: center
+}
+
+.cta:before {
+	margin-right: 10px;
+	content: "\f0a6";
+	font-family: FontAwesome;
+  	font-size: 12px;
+}
+  
