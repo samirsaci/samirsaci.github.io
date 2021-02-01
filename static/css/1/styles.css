@@ -1,12 +1,11 @@
 body {
 	font-family: "Oswald", sans-serif;
 	font-size: 14px;
-	background-color: #fdf6ee;
+	background-color: #fdf6ee !important;
 	cursor: default;
 }
 
 #legend {
-	/* background-color: #ffffff; */
 	font-size: 14px;
 	border: 1.5px solid  #1b0180;
 	border-radius: 8px;

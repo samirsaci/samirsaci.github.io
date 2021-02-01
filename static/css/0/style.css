@@ -8,27 +8,35 @@ body {
 
 #banner h1 {
 	font-family: "Poppins", sans-serif;
-	font-size: 62px;
-	line-height: 10px;
+	font-size: 60px;
+	line-height: 50px;
 	font-weight: bold;
+}
+
+
+#banner h1 {
+	padding-top: 2%;
+	padding-bottom: 2%;
 }
 
 #banner h2 {
 	font-family: "Poppins", sans-serif;
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	font-size: 20px;
+	line-height: 30px;
 	font-weight: 300;
 	color: #1b0180;
+	box-sizing: border-box;
 }
 
 #banner ul {
 	color: #111;
 	padding-left: 0;
-	/* font-weight: 200; */
+	font-size: 14px !important;
 }
 
 #banner ul li::before {
 	font-family: "Poppins", sans-serif;
-	font-size: 18px;
 	font-weight: normal;
 	color: #111;
 }
@@ -74,10 +82,6 @@ div .links a {
 	height: 5px;
 }
 
-#banner h1 {
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
 
 #banner-content.row {
 	padding-top: 30px; /* 100 px */
@@ -245,7 +249,7 @@ h2 {
 /* text animation */
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 450px;}
+  to{width: 280px;}
 }
 /* cursor animations */
 @keyframes animated-cursor{

@@ -3,6 +3,10 @@
     margin: auto;
 }
 
+body {
+    background-color: #fdf6ee;
+}
+
 #tooltip {
     position: absolute;
 	display: inline-block;
