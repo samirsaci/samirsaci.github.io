@@ -1,10 +1,8 @@
 (function() {
 	// https://observablehq.com/@d3/bar-chart-race-explained
-	////////////////////////////////////////////////////////////
 	//// Setup /////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////
-	const svgWidth = 1280;
-	const svgHeight = 720;
+	const svgWidth = 1280; // 1280
+ 	const svgHeight = 500; // 720
 	const margin = { top: 80, right: 16, bottom: 16, left: 16 };
 	const width = svgWidth - margin.left - margin.right;
 	const height = svgHeight - margin.top - margin.bottom;
@@ -13,7 +11,7 @@
 	// Top N
 	const n = 10;
 	// Keyframes per year
-	const k = 10;
+	const k = 2;
 	// Duration between keyframes
 	const duration = 250;
 
@@ -49,10 +47,8 @@
 		.attr("y", -16)
 		.text("Value in $M");
 
-	////////////////////////////////////////////////////////////
 	//// Data //////////////////////////////////////////////////
-	////////////////////////////////////////////////////////////
-	d3.csv("category-brands.csv", d3.autoType).then(data => {
+	d3.csv("/static/data/5/category-brands.csv", d3.autoType).then(data => {
 		console.log({ data });
 
 		const names = new Set(data.map(d => d.name));
@@ -66,7 +62,7 @@
 				d => d.name
 			)
 		)
-			.map(([date, data]) => [new Date(date), data])
+			.map(([date, data]) => [date, data]) //[new Date(date), data])
 			.sort(([a], [b]) => d3.ascending(a, b));
 		console.log({ datevalues });
 
@@ -92,7 +88,7 @@
 					]);
 				}
 			}
-			keyframes.push([new Date(kb), rank(name => b.get(name))]);
+			keyframes.push([new Date(kb), rank(name => b.get(name))]); //
 			return keyframes;
 		})();
 		console.log({ keyframes });
@@ -109,9 +105,7 @@
 		const next = new Map(nameframes.flatMap(([, data]) => d3.pairs(data)));
 		console.log({ prev, next });
 
-		////////////////////////////////////////////////////////////
 		//// Initialization ////////////////////////////////////////
-		////////////////////////////////////////////////////////////
 
 		async function init() {
 			const updateBars = bars();
@@ -137,11 +131,14 @@
 			}
 		}
 
+
+		// Color Scale
+		const scale = d3.scaleOrdinal(d3.schemeTableau10);
+		
 		init();
 
-		////////////////////////////////////////////////////////////
 		//// Bars //////////////////////////////////////////////////
-		////////////////////////////////////////////////////////////
+		  
 		function bars() {
 			let bar = g
 				.append("g")
@@ -173,12 +170,11 @@
 							.transition(transition)
 							.attr("y", d => y(d.rank))
 							.attr("width", d => x(d.value) - x(0))
+							.attr('fill', d => scale(d.rank))
 					));
 		}
 
-		////////////////////////////////////////////////////////////
 		//// Axis //////////////////////////////////////////////////
-		////////////////////////////////////////////////////////////
 		function axis() {
 			const axis = d3
 				.axisTop(x)
@@ -282,7 +278,7 @@
 				.attr("text-anchor", "end")
 				.attr("x", width)
 				.attr("y", height)
-				.text(formatDate(keyframes[0][0]));
+				.text(console.log(keyframes[0][0])); // formatDate(keyframes[0][0])
 
 			return ([date], transition) => {
 				transition.end().then(() => now.text(formatDate(date)));
