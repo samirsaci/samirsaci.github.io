@@ -1,17 +1,21 @@
-(function() {
+function startRace() {
 	// https://observablehq.com/@d3/bar-chart-race-explained
 	//// Setup /////////////////////////////////////////////////
-	const svgWidth = 1280; // 1280
- 	const svgHeight = 500; // 720
+	const svgWidth = 800;
+	const svgHeight = 500; //720
 	const margin = { top: 80, right: 16, bottom: 16, left: 16 };
 	const width = svgWidth - margin.left - margin.right;
 	const height = svgHeight - margin.top - margin.bottom;
 	const barPadding = 0.1;
 
+	// Remove the bar race chart if it exists
+	if (d3.select("#bar-chart-race"))
+		d3.select("svg").remove();
+
 	// Top N
 	const n = 10;
 	// Keyframes per year
-	const k = 2;
+	const k = 10;
 	// Duration between keyframes
 	const duration = 250;
 
@@ -21,7 +25,9 @@
 	const svg = d3
 		.select("main")
 		.append("svg")
-		.attr("viewBox", [0, 0, svgWidth, svgHeight]);
+		.attr("id", "bar-race-chart")
+		.attr("width", svgWidth)
+		.attr("height", svgHeight);
 
 	const g = svg
 		.append("g")
@@ -35,11 +41,12 @@
 		.range([0, (height / n) * (n + 1 + barPadding)])
 		.padding(barPadding);
 
-	g.append("text")
-		.attr("class", "title")
-		.attr("y", -margin.top)
-		.attr("dy", "1.2em")
-		.text("Best Global Brands");
+	const headTitle = g.append("text")
+					.attr("class", "title")
+					.attr("id", "head-title")
+					.attr("y", -margin.top)
+					.attr("dy", "1.2em")
+					.text("Best Global Brands");
 
 	const subtitle = g
 		.append("text")
@@ -48,11 +55,14 @@
 		.text("Value in $M");
 
 	//// Data //////////////////////////////////////////////////
-	d3.csv("/static/data/5/category-brands.csv", d3.autoType).then(data => {
-		console.log({ data });
+	d3.csv("static/data/5/category-brands.csv", d3.autoType).then(data => {
+		// console.log({ data });
 
 		const names = new Set(data.map(d => d.name));
-		console.log({ names });
+		const categoryByName = new Map(data.map(d => [d.name, d.category]));
+
+		// console.log({ names });
+		// console.log({ categoryByName });
 
 		const datevalues = Array.from(
 			d3.rollup(
@@ -62,9 +72,9 @@
 				d => d.name
 			)
 		)
-			.map(([date, data]) => [date, data]) //[new Date(date), data])
+			.map(([date, data]) => [new Date(date), data])
 			.sort(([a], [b]) => d3.ascending(a, b));
-		console.log({ datevalues });
+		// console.log({ datevalues });
 
 		function rank(value) {
 			const data = Array.from(names, name => ({
@@ -76,6 +86,7 @@
 			return data;
 		}
 
+		// 
 		const keyframes = (() => {
 			const keyframes = [];
 			let ka, a, kb, b;
@@ -88,25 +99,24 @@
 					]);
 				}
 			}
-			keyframes.push([new Date(kb), rank(name => b.get(name))]); //
+			keyframes.push([new Date(kb), rank(name => b.get(name))]);
 			return keyframes;
 		})();
-		console.log({ keyframes });
+		// console.log({ keyframes });
 
 		const nameframes = d3.groups(
 			keyframes.flatMap(([, data]) => data),
 			d => d.name
 		);
-		console.log({ nameframes });
+		// console.log({ nameframes });
 
 		const prev = new Map(
 			nameframes.flatMap(([, data]) => d3.pairs(data, (a, b) => [b, a]))
 		);
 		const next = new Map(nameframes.flatMap(([, data]) => d3.pairs(data)));
-		console.log({ prev, next });
+		// console.log({ prev, next });
 
 		//// Initialization ////////////////////////////////////////
-
 		async function init() {
 			const updateBars = bars();
 			const updateAxis = axis();
@@ -131,14 +141,18 @@
 			}
 		}
 
-
-		// Color Scale
-		const scale = d3.scaleOrdinal(d3.schemeTableau10);
-		
 		init();
 
+		function color(d) {
+			const scale = d3.scaleOrdinal(d3.schemeTableau10);
+			if (data.some(d => d.category !== undefined)) {
+			  scale.domain(Array.from(categoryByName.values()));
+			  return scale(categoryByName.get(d.name));
+			}
+			return scale(d.name);
+		  }
+
 		//// Bars //////////////////////////////////////////////////
-		  
 		function bars() {
 			let bar = g
 				.append("g")
@@ -152,7 +166,8 @@
 						enter =>
 							enter
 								.append("rect")
-								.attr("class", "bar")
+								//.attr("class", "bar")
+								.attr("fill", color)
 								.attr("x", x(0))
 								.attr("y", d => y((prev.get(d) || d).rank))
 								.attr("height", y.bandwidth())
@@ -170,11 +185,12 @@
 							.transition(transition)
 							.attr("y", d => y(d.rank))
 							.attr("width", d => x(d.value) - x(0))
-							.attr('fill', d => scale(d.rank))
 					));
 		}
 
+		////////////////////////////////////////////////////////////
 		//// Axis //////////////////////////////////////////////////
+
 		function axis() {
 			const axis = d3
 				.axisTop(x)
@@ -278,11 +294,11 @@
 				.attr("text-anchor", "end")
 				.attr("x", width)
 				.attr("y", height)
-				.text(console.log(keyframes[0][0])); // formatDate(keyframes[0][0])
+				.text(formatDate(keyframes[0][0]));
 
 			return ([date], transition) => {
 				transition.end().then(() => now.text(formatDate(date)));
 			};
 		}
 	});
-})();
+}
