@@ -170,6 +170,7 @@ function startRace() {
 								.attr("fill", color)
 								.attr("x", x(0))
 								.attr("y", d => y((prev.get(d) || d).rank))
+								.attr("border-radius", "10px")
 								.attr("height", y.bandwidth())
 								.attr("width", d => x((prev.get(d) || d).value) - x(0)),
 						update => update,

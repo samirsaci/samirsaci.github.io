@@ -1,7 +1,7 @@
 // Map
 
-const width = 700,
-    height = 700,
+const width = 600,
+    height = 600,
     hexRadius = 3;
 var projection, 
     svg,

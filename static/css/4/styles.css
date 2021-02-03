@@ -54,7 +54,17 @@ body {
 .cta:before {
 	margin-right: 10px;
 	content: "\f0a6";
-	font-family: FontAwesome;
-  	font-size: 12px;
+	font-family: FontAwesome !important;
+  	font-size: 10px;
+}
+
+.cta-2{
+	text-align: center
+}
+
+.cta-2:before {
+	margin-right: 10px;
+	font-family: FontAwesome !important;
+  	font-size: 10px;
 }
   
