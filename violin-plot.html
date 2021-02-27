@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/static/css/7/styles.css">
+	<script src="/static/js/lib/d3.v4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.1.0/d3-annotation.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="title">
+			<h3> <b>Pareto Analysis:</b> how many references represent n % of your sales ? </h3>
+			<p> Each point represents one reference <i>(Item Code, Brand)</i> with total sales quantity <b>(Pieces)</b> as y-axis coordinate. They are split in groups
+			representing 10% of cumulative sales from highest to lowest sales.</p>
+			<p> <i>(e.g <b>Dark Blue</b> points are high runners representing top 20% of total sales, [...] <b>Purple</b> points represent the lowest rotation 
+				items representing the last 20 % of sold items)
+			</p>
+		</div>
+		<div id="chart"></div>
+	</div>
+	<script src="/static/js/7/index.js"></script>
+</body>
+</html>

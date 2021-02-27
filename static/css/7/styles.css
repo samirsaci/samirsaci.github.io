@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px !important;
+  margin: 1em auto 4em auto !important;   /* margin: 1em auto 4em auto; */
+  position: relative !important;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+svg text {
+  text-shadow: 2px 2px #fff, 2px -2px #fff, -2px 2px #fff, -2px -2px #fff;
+}
+
+.cells path {
+  fill: none;
+  pointer-events: all;
+}
+
+/* .cells circle {
+  fill: #fe3030;
+} */
+
+body div .title {
+  border: 1.5px solid #1b0180;
+  padding: .15rem .5rem;
+  border-radius: 5px;
+  width: 800px !important;
+  font-size: 12px !important;
+}
+
+h1 ~ div .title {
+  font-size: small;
+  right: 0;
+  position: absolute;
+  padding: .15rem .5rem;
+  
+}
+
+.cells :hover circle {
+  fill: #1b0180;
+}
+
+.axis .domain {
+  display: none;
+}
+
+.axis .tick line {
+  stroke: #ddd;
+}
+
+.median-line line {
+  stroke: #1b0180;
+}
+
+.median-line text {
+  fill: #1b0180;
+}
+
+.tooltip * {
+  pointer-events: none;
+}
+
+.annotation-group * {
+  pointer-events: none;
+}
+
+text.annotation-note-label {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+text.annotation-note-title {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+text.annotation-note-value {
+  font-weight: normal;
+  text-transform: uppercase;
+}
