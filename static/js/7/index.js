@@ -29,8 +29,8 @@ d3.json('/static/data/7/rotation.json', (error, json) => {
   const data = json; // json.slice(1)
 
   y.domain([
-    Math.floor(d3.min(data, d => d.value_1)), //  / 10000) * 10000,
-    Math.ceil(d3.max(data, d => d.value_1)),  //  / 10000) * 10000,
+    Math.floor(d3.min(data, d => d.value_1)), // 
+    Math.ceil(d3.max(data, d => d.value_1)),  //  
   ]);
 
   // Sort data from highest to lowest pcs qty
