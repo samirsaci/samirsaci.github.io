@@ -40,3 +40,26 @@ footer {
 	font-weight: bold;
 	font-variant-numeric: tabular-nums;
 }
+
+/*--------Footer--------*/
+footer:before {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 5px;
+	margin: 30px auto 25px auto;
+}
+
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+	font-family: "Open Sans", sans-serif, Arial, Helvetica;
+	font-size: 12px;
+	font-weight: normal;
+	color: #999;
+	text-align: center !important;
+}
+
+footer:before {
+	background: #0d0344;
+}

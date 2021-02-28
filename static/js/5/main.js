@@ -17,7 +17,7 @@ function startRace() {
 	// Keyframes per year
 	const k = 10;
 	// Duration between keyframes
-	const duration = 250;
+	const duration = 100;
 
 	const formatNumber = d3.format(",d");
 	const formatDate = d3.utcFormat("%Y");
