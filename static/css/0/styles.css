@@ -257,7 +257,7 @@ h2 {
 /* text animation */
 @keyframes animated-text{
   from{width: 0;}
-  to{width: 280px;}
+  to{width: 290px;}
 }
 /* cursor animations */
 @keyframes animated-cursor{
