@@ -143,7 +143,7 @@ div .links a {
 	-webkit-transition: 0.25s ease;
 	-moz-transition: 0.25s ease;
 	transition: 0.25s ease;
-	object-fit: cover;
+	object-fit: cover; /**/
 }
 
 #portfolio .portfolio-box .portfolio-box-caption {
