@@ -129,9 +129,9 @@ div .links a {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	padding-bottom: 62.5%;
+	padding-bottom: 62%; /*62.5%*/
 	height: 0;
-	border-radius: 10px;
+	border-radius: 5px;
 	border: 1px inset #1b0180;
 	background-color: white;
 }
@@ -159,12 +159,25 @@ div .links a {
 	transition: 0.2s ease;
 }
 
+#portfolio .portfolio-category {
+    display: block;
+    text-align: left;
+	font-size: 12px;
+	color:#1b0180;
+    margin-top: 1em;
+    width: 100%;
+	white-space: nowrap;
+	font-weight: 500;
+    letter-spacing: .2px;
+    text-transform: uppercase;
+}
+
 #portfolio .portfolio-box-title {
     display: block;
-    text-align: center;
+    text-align: left;
 	font-size: 14px;
 	color:#1b0180;
-    margin-top: .5em;
+    margin-top: .2em;
     width: 100%;
 	white-space: nowrap;
 	font-weight: 700;
@@ -264,3 +277,28 @@ h2 {
 	from{border-right-color:  #1b0180;}
 	to{border-right-color: transparent;}
   }
+
+
+  .head__nav .nav {
+	list-style: none
+  }
+  .head__nav {
+	text-align: right;
+	position: relative;
+  }
+  
+  .head__nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 0.875rem;
+	font-weight: 500;
+	color: var(--color-default);
+  }
+
+  .head__nav {
+    flex: 1 1 auto;
+  }
+  .head__nav a {
+    margin-left: 1.5rem;
+  }
+
