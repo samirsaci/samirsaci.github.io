@@ -129,7 +129,7 @@ div .links a {
 	position: relative;
 	display: block;
 	overflow: hidden;
-	padding-bottom: 62%; /*62.5%*/
+	padding-bottom: 62%;
 	height: 0;
 	border-radius: 5px;
 	border: 1px inset #1b0180;
