@@ -2,7 +2,6 @@
 // Index Page Javascript //
 //////////////////////////
 
-
 // Animate Name and Position Name
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -36,5 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
 		setTimeout(typeWriter, speed);
 	}
 	}
+
+	// Ping all heroku app to avoid server stop
+	var http = require("http");
+	setInterval(function() {
+		http.get("https://centre-vaccin.herokuapp.com/");
+	}, 300000); // every 5 minutes (300000)
 });
 
