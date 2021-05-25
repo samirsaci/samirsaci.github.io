@@ -36,10 +36,26 @@ document.addEventListener("DOMContentLoaded", function() {
 	}
 	}
 
-	// Ping all heroku app to avoid server stop
-	var http = require("http");
-	setInterval(function() {
-		http.get("https://centre-vaccin.herokuapp.com/");
-	}, 300000); // every 5 minutes (300000)
+	async function funcName(url){
+		const response = await fetch(url);
+		var data = await response.json();
+		}
+
+	// Defining async function
+	async function getapi(url) {
+		
+		// Storing response
+		const response = await fetch(url);
+		
+		// Storing data in form of JSON
+		var data = await response.json();
+		console.log(data);
+		if (response) {
+			hideloader();
+		}
+		console.log(data);
+	}
+	// Calling that async function
+	getapi('https://centre-vaccin.herokuapp.com/centres');
 });
 
