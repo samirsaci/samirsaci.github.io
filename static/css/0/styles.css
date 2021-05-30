@@ -304,3 +304,10 @@ h2 {
     margin-left: 1.5rem;
   }
 
+  .row {
+	display: flex;
+  }
+  
+  .column {
+	flex: 50%;
+  }
