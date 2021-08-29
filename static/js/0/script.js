@@ -55,7 +55,5 @@ document.addEventListener("DOMContentLoaded", function() {
 		}
 		console.log(data);
 	}
-	// Calling that async function
-	getapi('https://centre-vaccin.herokuapp.com/centres');
 });
 
