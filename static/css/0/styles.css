@@ -8,7 +8,7 @@ body {
 
 #banner h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   line-height: 50px;
   font-weight: bold;
 }
@@ -163,7 +163,7 @@ div .links a {
 #portfolio .portfolio-category {
   display: block;
   text-align: left;
-  font-size: 12px;
+  font-size: 15px;
   color: #1b0180;
   margin-top: 1em;
   width: 100%;
@@ -189,7 +189,7 @@ div .links a {
 #portfolio .portfolio-box-description {
   display: block;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
   color: #1b0180;
   width: 100%;
   margin-top: 0.7em;
