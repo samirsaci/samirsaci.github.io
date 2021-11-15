@@ -8,8 +8,8 @@ body {
 
 #banner h1 {
   font-family: "Poppins", sans-serif;
-  font-size: 50px;
-  line-height: 50px;
+  font-size: 40px;
+  line-height: 15px;
   font-weight: bold;
 }
 
@@ -40,7 +40,7 @@ ul li {
 #banner ul {
   color: #111;
   padding-left: 0;
-  font-size: 14px !important;
+  font-size: 15px !important;
 }
 
 #banner ul li::before {
@@ -60,7 +60,7 @@ div .links a {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 0.875rem;
   color: #111;
-  padding: 5px 10px 2px 0px;
+  padding: 2px 10px 2px 0px;
 }
 
 #landing-footer,
