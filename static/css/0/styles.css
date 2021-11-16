@@ -23,8 +23,8 @@ ul li {
 }
 
 #banner h1 {
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 30px;
+  padding-bottom: 20px;
 }
 
 #banner h2 {
@@ -79,7 +79,7 @@ div .links a {
 }
 
 #banner {
-  padding: 12px;
+  padding: 5px;
 }
 
 #banner .section-heading:before,
