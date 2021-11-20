@@ -137,16 +137,6 @@ div .links a {
   background-color: white;
 }
 
-#portfolio .portfolio-box img {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  transform: scale(1);
-  -webkit-transition: 0.25s ease;
-  -moz-transition: 0.25s ease;
-  transition: 0.25s ease;
-  object-fit: cover; /**/
-}
-
 #portfolio .portfolio-box .portfolio-box-caption {
   position: absolute;
   bottom: 0;
