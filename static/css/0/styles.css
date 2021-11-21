@@ -187,22 +187,6 @@ div .links a {
   white-space: wrap;
 }
 
-#portfolio
-  .portfolio-box
-  .portfolio-box-caption
-  .portfolio-box-caption-content {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  transform: translateY(-50%);
-  text-align: center;
-  font-weight: bold;
-  color: #111;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-  pointer-events: none;
-}
-
 #portfolio .portfolio-box:hover {
   border: 1px inset red;
 }
