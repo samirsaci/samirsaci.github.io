@@ -15,7 +15,7 @@ body {
 
 ul {
   margin-top: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 ul li {
@@ -24,14 +24,14 @@ ul li {
 
 #banner h1 {
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 #banner h2 {
   font-family: "Poppins", sans-serif;
   margin-bottom: 5px;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 25px;
   font-weight: 300;
   color: #1b0180;
   box-sizing: border-box;
