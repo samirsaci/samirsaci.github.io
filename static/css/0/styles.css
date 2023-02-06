@@ -8,9 +8,12 @@ body {
 
 #banner h1 {
   font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+  margin-bottom: 10px;
   font-size: 35px;
-  line-height: 20px;
+  line-height: 10px;
   font-weight: bold;
+  color: #1b0180;
 }
 
 ul {
@@ -29,9 +32,9 @@ ul li {
 
 #banner h2 {
   font-family: "Poppins", sans-serif;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   font-size: 20px;
-  line-height: 25px;
+  line-height: 30px;
   font-weight: 300;
   color: #1b0180;
   box-sizing: border-box;
@@ -53,7 +56,8 @@ ul li {
   font-family: "Open Sans", sans-serif, Arial, Helvetica;
   font-size: 12px;
   color: white;
-  background-color: #111;
+  background-color: #1b0180;
+  border-color: #1b0180;
 }
 
 div .links a {
@@ -101,7 +105,7 @@ div .links a {
 
 .button {
   font-size: 16px;
-  margin: 20px 0;
+  margin: 40px 0;
   padding: 11px 16px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
